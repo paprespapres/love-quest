@@ -23,3 +23,7 @@ def handle_message(data):
 
 if __name__ == "__main__":
     socketio.run(app, host="0.0.0.0", port=8000, debug=True)
+
+@socketio.on('send_image')
+def handle_image(data):
+    emit('receive_image', data, broadcast=True)
