@@ -28,8 +28,10 @@ socket.on('receive_message', function(data) {
 
 socket.on('receive_image', function(data) {
     let chatBox = document.getElementById("chat-box");
+    let imageContainer = document.createElement("div");
     let newImage = document.createElement("img");
     newImage.src = data;
     newImage.style.maxWidth = "200px"; // Set a max width for the image
-    chatBox.appendChild(newImage);
+    imageContainer.appendChild(newImage);
+    chatBox.appendChild(imageContainer);
 });
