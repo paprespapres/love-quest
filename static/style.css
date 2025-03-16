@@ -1,2 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: pink;
+}
 
-/* Add your styling rules here */
+h1 {
+  color: red;
+}
+
+button {
+  background-color: white;
+  border: 2px solid red;
+  padding: 10px;
+  cursor: pointer;
+}
